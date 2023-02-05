@@ -6,4 +6,9 @@ NetScript - Originally I was looking to make a script language that was to C# wh
 
 ModScript - This runs the script as an ordinary module. The only added bonus is you can use src URLs from other origins.
 
-JSONScript - Loads the script as an importmap. Since there is a one importmap per document limit, it get's loaded into an invisible iframe.
+JSONScript - Loads the script as an importmap. Since there is a one importmap per document limit, it get's loaded into an invisible iframe. Still need to do some testing to see what is actually possible with this one.
+
+ClassScript - This loads the script into and immediatly instantiated class object. This is one of the most insteresting to me because this slight change in context makes the syntax rules very different.
+
+DataScript - This just wraps the script in a simple object. Not as drastic as ClassScript but there are some rule changes. 
+
