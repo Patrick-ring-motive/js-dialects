@@ -30,10 +30,6 @@ globalObject.cors = function(url) {
 
 void async function VectorScripts() {
 
-  function SVGLoader() {
-
-
-  }
 
   async function loadVectorScript(VectorScript) {
 
