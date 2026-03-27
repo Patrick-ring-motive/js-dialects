@@ -3,24 +3,18 @@ globalObject.globalObject = globalObject;
 
 globalObject.fetchcors = async function(url) {
 
-
   return await fetch('https://cors.gamestop.workers.dev/' + url);
 
-
 }
-
 
 globalObject.cors = function(url) {
 
   return 'https://cors.gamestop.workers.dev/' + url;
 
-
 }
 
 void async function ClassScripts() {
   async function loadClassScript(ClassScript) {
-
-
 
     let ClassScriptInner = ClassScript.innerHTML;
     if (ClassScript.hasAttribute('src')) {
@@ -51,12 +45,9 @@ void async function ClassScripts() {
     ClassScript.type = ClassScript.type + '-x';
     document.body.appendChild(ClassScriptTag);
 
-
   }
 
-
   window.addEventListener('DOMContentLoaded', async (event) => {
-
 
     const ClassScriptList = Array.from(document.querySelectorAll('script[type="text/ClassScript"i],script[type="application/ClassScript"i]'));
 
@@ -65,7 +56,9 @@ void async function ClassScripts() {
     for (let i = 0; i < ClassScriptList_length; i++) {
       try {
         loadClassScript(ClassScriptList[i]);
-      } catch (e) { continue; }
+      } catch (e) {
+        continue;
+      }
     }
   });
 }?.();
